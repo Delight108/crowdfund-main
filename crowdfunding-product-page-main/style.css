@@ -1,0 +1,281 @@
+
+:root{
+   --Mobile: 375px;
+   --Desktop: 1440px;
+
+
+--primary-color-Moderate-cyan: hsl(176, 50%, 47%);
+--primary-color-Dark-cyan: hsl(176, 72%, 28%)
+;
+
+--neutral-color-Black: hsl(0, 0%, 0%); 
+--neutral-color-Dark-gray: hsl(0, 0%, 48%);
+
+--font-size: 16px;
+--font-family: 'Commissioner',
+   sans-serif;
+--font-weight-1: 400;
+--font-weight-2: 500;
+--font-weight: 900; 
+
+}
+
+
+
+body{
+   display: grid;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-size: var(--body-font-size);
+   background-color: aliceblue;
+}
+
+
+.bg-image{
+   margin-top: none;
+   background-image: url("/images/image-hero-desktop.jpg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 50rem;
+   width: 100%;
+}
+
+h1,
+.header{
+   color: white;
+   cursor: pointer;
+}
+
+.header{
+   box-sizing: border-box;
+   display: flex;
+   gap: 3.5rem;
+   justify-content: flex-end;
+   margin-right: 15rem;
+   font-size: var(--font-size);
+   margin-top: -3rem;
+   font-weight: var(--font-weight);
+}
+
+h1{
+   display: flex;
+   padding-top: 4rem;
+   margin-left: 15rem;
+}
+
+.hover-p::after{
+   content: '';
+   width: 0%;
+   height: 1.5px;
+   background: ghostwhite;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+
+}
+
+.hover-p:hover::after{
+   width: 100%;
+}
+
+i{
+   display: none;
+}
+
+
+.full{
+   width: 50%;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   margin-left: 29rem;
+   margin-top: -23rem;
+   border: none;
+   border-radius: 9px;
+}
+
+.top{
+   margin-left: 27rem;
+   position: relative;
+   top: -2rem;
+}
+
+.top1{
+   font-weight: var(--font-weight);
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+}
+
+.top2{
+   font-weight: var(--font-weight-1);
+   display: flex;
+   justify-content: center;
+   font-size: 27px;
+   color: var(--primary-color-Moderate-cyan);
+}
+
+.row{
+   display:flex;
+   flex-direction: row;
+   margin-left: 3rem;
+   margin-top: 2rem;
+}
+
+
+#bookmark{
+   display: flex;
+   background-color: var(--primary-color-Moderate-cyan);
+   border-radius: 23px;
+   width: 10rem;
+   gap: .5rem;
+   border-left: none;
+   margin-left: 28rem;
+}
+
+#g-color{
+   text-align: center;
+   border-radius: 30px;
+   width: 13rem;
+   background-color: var(--primary-color-Dark-cyan) ;
+   height: 3.5rem;
+}
+
+
+.price-column{
+   display: flex;
+   gap: 14rem;
+   margin-left: 3rem;
+   border: none;
+   font-weight: bolder;
+   font-family: var(--font-family);
+}
+
+.two{
+   border: none;
+   width: 50%;
+   background: white;
+   margin-top: 1rem;
+   margin-left: 29rem;
+}
+
+.loading{
+   margin-left: -37rem;
+   background: var(--primary-color-Moderate-cyan);
+   width: 29rem;
+   border-radius: 10px;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+
+.description > h3{
+   font-size: 1.5rem;
+   font-weight: var(--font-weight);
+   font-family: var(--font-family);
+   margin-left: 1rem;
+}
+
+.p-description > p{
+   color: var(--primary-color-Moderate-cyan);
+}
+
+.description > .p-description{
+   margin-left: 1rem;
+   width: 90%;
+}
+
+h3{
+   font-size: 1.5rem;
+   font-weight: var(--font-weight);
+   font-family: var(--font-family);
+   color: var(--neutral-color-Black);
+}
+
+.field-one{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  width: fit-content;
+  width: 84%; 
+  border: 0.2px solid var(--primary-color-Moderate-cyan);
+  margin-left: 1rem;
+}
+
+.flex{
+   display: flex;
+   flex-direction: row;
+   gap: 32rem;
+}
+
+.field-flex{
+   display: flex;
+   text-align: center;
+   margin-top: 2rem;
+   color: var(--primary-color-Moderate-cyan);
+}
+
+.field-flex-green{
+   display: flex;
+   text-align: center;
+   margin-left: 1rem;
+   color: white;
+   font-weight: 900;
+}
+
+.not{
+   background-color: var(--neutral-color-Dark-gray);
+   width: 9rem;
+   height: 2rem;
+   margin-top: 0.8rem;
+   border-radius: 30px;
+}
+
+.flex2{
+   display: flex;
+   flex-direction: row;
+   gap: 34rem;
+}
+
+.flex2-child{
+   display: flex;
+   gap: 1rem;
+}
+
+.flex2-child > p{
+   margin-top: 2rem;
+   color: var(--primary-color-Moderate-cyan);
+}
+
+#flex-rset{
+   display: flex;
+   gap: 26.5rem;
+}
+
+#opacity{
+   opacity: 0.7;
+   width: 84%;
+   margin-left: 1rem;
+   margin-bottom: 1.5rem;
+}
+
+
+#small-gap{
+   display: flex;
+   gap: 23rem;
+}
+
+#last{
+   margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
